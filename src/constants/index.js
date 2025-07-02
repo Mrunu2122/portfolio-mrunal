@@ -34,9 +34,10 @@ import {
   thirdTestimonial,
 } from '../assets'
 
-
-// Import Tekisky separately
-import tekisky from "../assets/company/tekisky.png";
+import doutya from "../assets/company/doutya.png";
+import Infotech from "../assets/company/infotech.png";
+import advisor from "../assets/company/advisor.png";
+import sign from "../assets/company/sign.png";
 
 
 export const navLinks = [
@@ -155,98 +156,71 @@ const technologies = [
 const experiences = [
   {
     title: "Full-Stack Developer",
-    company_name: "Tekisky",
-    icon: tekisky,
+    company_name: "Doutya Technologies",
+    icon: doutya ,
     iconBg: "#383E56",
-    date: "Jan 2023 - present",
+    date: "30 July 2024 – 30 April 2025",
     points: [
-      "Developing and maintaining web applications using MERN technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Worked on full-stack web applications using MERN stack.",
+      "Collaborated with cross-functional teams to deliver AI-powered features.",
+      "Built responsive UIs and RESTful APIs for core products.",
+      "Gained experience in production-level deployments and performance optimization.",
     ],
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Huzaif proved me wrong.",
-    name: "MD Mustaqeem",
-    designation: "Ecommerce",
-    company: "QuickMart",
-    image: firstTestimonial,
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Huzaif does.",
-    name: "Abdul Raheman",
-    designation: "Ecommerce Business",
-    company: "justbuyz",
-    image: secondTestimonial,
-  },
-  {
-    testimonial:
-      "After Huzaif optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "James Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: thirdTestimonial,
-  },
-];
 
 const projects = [
   {
-    name: "Tekisky Mart",
-    description:
-      "Tekisky Mart is a web-based platform that allows users to search, explore, and purchase a wide range of products from various providers, offering a seamless and efficient shopping experience.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "white-text-gradient",
-      },
-      {
-        name: "node",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
- 
-    ],
-    image: project2,
-    source_code_link: "https://github.com/",
+  name: "Infotect-Interior Web Page",
+  description:
+    "A clean and visually rich website built to showcase my frontend skills, focused on UI layout, responsiveness, and design.",
+  tags: [
+    {
+      name: "javascript",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "react",
+      color: "green-text-gradient",
+    },
+    {
+      name: "tailwindcss",
+      color: "yellow-text-gradient",
+    },
+  ],
+  image: Infotech, // You can change this if you upload a custom image
+  source_code_link: "https://github.com/Mrunu2122/infotech-interiors.git",
   },
   {
-    name: "GearXpert",
+    name: "AI-Advisor",
     description:
-      "GearXpert is your ultimate destination for premium auto parts and accessories, Whether you're an automobile enthusiast or a professional, find everything you need to upgrade, repair.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "emailJs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Gsap",
-        color: "pink-text-gradient",
-      },
+    "An AI-powered mock interview platform that converts your speech into text and highlights areas where you fumbled, offering suggestions for improvement.It gives you unlimited attempts to practice",
+  tags: [
+    {
+      name: "react",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "tailwind",
+      color: "green-text-gradient",
+    },
+    {
+      name: "openai",
+      color: "pink-text-gradient",
+    },
+    {
+      name: "speech-to-text",
+      color: "orange-text-gradient",
+    },
     ],
-    image: gearXpert,
-    source_code_link: "https://github.com/",
+    image: advisor,
+    source_code_link: "https://github.com/Mrunu2122/ai-interviewer.git",
   },
   {
-    name: "GoGroove-Ecommerce",
+    name:"Sign Language Detector",
     description:
-      "Go-Groove is your ultimate destination for premium products across various categories. Whether you're a savvy shopper or a professional, enhance, and simplify your lifestyle—all in one place!",
+    "A real-time sign language recognition system that uses webcam input and machine learning to detect hand gestures and translate them into text and speaks as well",
     tags: [
       {
         name: "react",
@@ -260,14 +234,10 @@ const projects = [
         name: "node",
         color: "green-text-gradient",
       },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
     ],
-    image: project3,
-    source_code_link: "https://github.com/",
+    image: sign,
+    source_code_link: "https://github.com/Mrunu2122/sign-to-speech-ai.git",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
