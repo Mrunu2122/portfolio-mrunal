@@ -28,7 +28,7 @@ const Resume = () => {
         </p>
 
         <a
-          href="/Mrunal-Soshte-Resume.pdf"
+          href="/MrunalSoshte-Resume.pdf"
           download
           className="inline-block bg-gradient-to-r from-[#915EFF] to-[#7b4bf4] hover:from-[#7b4bf4] hover:to-[#915EFF] text-white text-lg font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-md hover:shadow-xl"
         >
