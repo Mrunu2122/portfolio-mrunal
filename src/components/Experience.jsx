@@ -22,13 +22,30 @@ const ExperienceCard = ({ experience }) => {
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      iconStyle={{ 
+        background: experience.iconBg,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}
       icon={
-        <div className='flex justify-center items-center w-full h-full'>
+        <div style={{
+          width: '100%',
+          height: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          padding: '15%'
+        }}>
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className='w-[90%] h-[90%] object-contain'
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'contain',
+              borderRadius: experience.company_name === 'Doutya Technologies' ? '50%' : 'none'
+            }}
           />
         </div>
       }

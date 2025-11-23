@@ -15,10 +15,6 @@ import {
   mysql,
   express,
   aws,
-  mui,
-  
-  gsap,
-  framer,
   figma,
   git,
   html,
@@ -26,9 +22,7 @@ import {
   mongodb,
   nodejs,
   reactjs,
-  redux,
   tailwind,
-  threejs,
   firstTestimonial,
   secondTestimonial,
   thirdTestimonial,
@@ -96,34 +90,12 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "gsap",
-    icon: gsap,
-  },
-  {
-    name: "framer",
-    icon: framer,
-  },
-
- 
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "figma",
+    name: "Figma",
     icon: figma,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
-  },
-  {
-    name: "Material Ui",
-    icon: mui,
   },
   {
     name: "Node JS",
@@ -145,13 +117,10 @@ const technologies = [
     name: "MySql",
     icon: mysql,
   },
-
   {
-    name: "git",
+    name: "Git",
     icon: git,
-  },
- 
-
+  }
 ];
 
 const experiences = [
