@@ -35,6 +35,7 @@ import {
 } from '../assets'
 
 import doutya from "../assets/company/doutya.png";
+import inmin from "../assets/company/inmin.png";
 import Infotech from "../assets/company/infotech.png";
 import advisor from "../assets/company/advisor.png";
 import sign from "../assets/company/sign.png";
@@ -157,7 +158,7 @@ const experiences = [
   {
     title: "Full-Stack Developer",
     company_name: "Doutya Technologies",
-    icon: doutya ,
+    icon: doutya,
     iconBg: "#383E56",
     date: "30 July 2024 – 30 April 2025",
     points: [
@@ -165,6 +166,40 @@ const experiences = [
       "Collaborated with cross-functional teams to deliver AI-powered features.",
       "Built responsive UIs and RESTful APIs for core products.",
       "Gained experience in production-level deployments and performance optimization.",
+    ],
+    technologies: [
+      { name: "React", icon: reactjs },
+      { name: "Node.js", icon: nodejs },
+      { name: "MongoDB", icon: mongodb },
+      { name: "Express", icon: express },
+      { name: "JavaScript", icon: javascript },
+      { name: "HTML", icon: html },
+      { name: "CSS", icon: css },
+      { name: "Git", icon: git },
+    ],
+  },
+  {
+    title: "Technical Lead & Full Stack Developer",
+    company_name: "Inmin",
+    icon: inmin,
+    iconBg: "#E6DEDD",
+    date: "1 July 2025 – 1 November 2025",
+    points: [
+      "Led a team of developers in designing and implementing scalable web applications.",
+      "Architected and developed full-stack solutions using modern technologies.",
+      "Mentored junior developers and conducted code reviews to maintain code quality.",
+      "Collaborated with cross-functional teams to deliver high-quality software solutions.",
+      "Optimized application performance and implemented best practices in development.",
+    ],
+    technologies: [
+      { name: "React", icon: reactjs },
+      { name: "Node.js", icon: nodejs },
+      { name: "MongoDB", icon: mongodb },
+      { name: "Express", icon: express },
+      { name: "JavaScript", icon: javascript },
+      { name: "TypeScript", icon: javascript },
+      { name: "AWS", icon: aws },
+      { name: "Git", icon: git },
     ],
   },
 ];

@@ -37,12 +37,15 @@ const Tech = () => {
     <section>
       <div className="tech-icons-wrapper flex flex-row flex-wrap justify-center gap-10">
         {technologies.map((technology) => (
-          <div className="w-28 h-28" key={technology.name}>
-            <img
-              src={technology.icon}
-              alt={technology.name}
-              className="tech-icon w-full h-full object-contain"
-            />
+          <div className="w-28 h-32 flex flex-col items-center" key={technology.name}>
+            <div className="w-20 h-20">
+              <img
+                src={technology.icon}
+                alt={technology.name}
+                className="tech-icon w-full h-full object-contain"
+              />
+            </div>
+            <p className="text-white text-sm mt-2 text-center">{technology.name}</p>
           </div>
         ))}
       </div>
