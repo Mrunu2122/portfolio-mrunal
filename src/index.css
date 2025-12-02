@@ -49,8 +49,9 @@
 
 .green-pink-gradient {
   background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: linear-gradient(90.13deg, rgba(0, 206, 168, 0.7) 1.9%, rgba(191, 97, 255, 0.7) 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, rgba(0, 206, 168, 0.7) 1.9%, rgba(191, 97, 255, 0.7) 97.5%);
+  padding: 1.5px; /* Slightly thicker border for better visibility with the reduced opacity */
 }
 
 .orange-text-gradient {
