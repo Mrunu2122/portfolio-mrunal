@@ -125,6 +125,27 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Frontend Developer (Freelance)",
+    company_name: "Neelambari",
+    icon: creator,  // Using the creator icon for freelance work
+    iconBg: "#E6DEDD",
+    date: "October 2025",
+    points: [
+      "Designed and developed the complete frontend of the Neelambari website from scratch.",
+      "Implemented responsive and modern UI/UX design principles for optimal user experience.",
+      "Utilized Next.js and TypeScript to build a performant and type-safe application.",
+      "Successfully delivered the project within a tight 1-week deadline.",
+    ],
+    technologies: [
+      { name: "Next.js", icon: reactjs },
+      { name: "TypeScript", icon: javascript },
+      { name: "React", icon: reactjs },
+      { name: "HTML", icon: html },
+      { name: "CSS", icon: css },
+      { name: "Git", icon: git },
+    ],
+  },
+  {
     title: "Full-Stack Developer",
     company_name: "Doutya Technologies",
     icon: doutya,
