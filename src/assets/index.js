@@ -20,12 +20,19 @@ import mui from './tech/mui.png'
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
+import typescript from "./tech/typescript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
+import docker from "./tech/docker.png";
+import postgresql from "./tech/postgresql.png";
+import firebase from "./tech/firebase.png";
+import shopify from "./tech/shopify.png";
+import cloudinary from "./tech/cloudinary.png";
+import googlecloud from "./tech/googlecloud.png";
 import firstTestimonial from './Tars Ken.webp';
 import secondTestimonial from './image.webp';
 import thirdTestimonial from './third testimonial.webp'
@@ -56,11 +63,17 @@ export {
   git,
   html,
   javascript,
+  typescript,
   mongodb,
   nodejs,
   reactjs,
   redux,
   tailwind,
   threejs,
-
+  docker,
+  postgresql,
+  firebase,
+  shopify,
+  cloudinary,
+  googlecloud,
 };

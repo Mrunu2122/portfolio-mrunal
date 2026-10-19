@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FiDownload, FiAward } from 'react-icons/fi';
+import { FiExternalLink, FiAward } from 'react-icons/fi';
 
 const Resume = () => {
   return (
@@ -20,7 +20,7 @@ const Resume = () => {
         </p>
       </motion.div>
 
-      {/* Download Section */}
+      {/* View Resume Section */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -34,17 +34,18 @@ const Resume = () => {
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#7b4bf4]/20 mb-6 mx-auto">
             <FiAward className="text-3xl text-[#7b4bf4]" />
           </div>
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">Download My Resume</h3>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">View My Resume</h3>
           <p className="text-gray-400 text-sm mb-8 max-w-2xl mx-auto">
-            Download my resume to explore my professional background and experience.
+            Check out my professional background, experience, and accomplishments.
           </p>
           <a
-            href="/MrunalSoshte-Resume.pdf"
-            download
+            href="https://drive.google.com/file/d/1mZ1ltYkp_2ir-w8Sib7TBjsc0sGbK2--/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#915EFF] to-[#7b4bf4] hover:from-[#7b4bf4] hover:to-[#915EFF] text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform"
           >
-            <FiDownload className="text-lg" />
-            Download CV
+            <FiExternalLink className="text-lg" />
+            View Resume
           </a>
         </div>
       </motion.div>

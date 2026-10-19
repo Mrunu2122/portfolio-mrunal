@@ -35,14 +35,14 @@ const ExperienceCard = ({ experience }) => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          padding: '15%'
+          padding: experience.company_name === 'Bin Tech' ? '0%' : '15%'
         }}>
           <img
             src={experience.icon}
             alt={experience.company_name}
             style={{
-              width: '100%',
-              height: '100%',
+              width: experience.company_name === 'Bin Tech' ? '85%' : '100%',
+              height: experience.company_name === 'Bin Tech' ? '85%' : '100%',
               objectFit: 'contain',
               borderRadius: experience.company_name === 'Doutya Technologies' ? '50%' : 'none'
             }}
