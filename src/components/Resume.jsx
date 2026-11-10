@@ -39,7 +39,7 @@ const Resume = () => {
             Check out my professional background, experience, and accomplishments.
           </p>
           <a
-            href="https://drive.google.com/file/d/1mZ1ltYkp_2ir-w8Sib7TBjsc0sGbK2--/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/1wyJOyY17L3293dtEOx_awHK6lLZpXWsT/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#915EFF] to-[#7b4bf4] hover:from-[#7b4bf4] hover:to-[#915EFF] text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform"

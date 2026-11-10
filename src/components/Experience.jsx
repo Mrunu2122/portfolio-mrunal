@@ -61,14 +61,21 @@ const ExperienceCard = ({ experience }) => {
       </div>
 
       <ul className='mt-5 list-disc ml-5 space-y-2'>
-        {experience.points.map((point, index) => (
-          <li
-            key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
-          >
-            {point}
-          </li>
-        ))}
+        {experience.points.map((point, index) => {
+          // Highlight key metrics, technologies, and achievements
+          const highlightedPoint = point.replace(
+            /(\b(?:Farm Store|Little Lads|3D website|inmin\.info|Xortlist|Axara|React|Three\.js|React Three Fiber|Next\.js|TypeScript|MongoDB|Python|React Native|Shopify|20 days|48 hours|70 orders in 11 minutes|3 production apps|14 days)\b)/g,
+            '<strong class="text-white font-semibold">$1</strong>'
+          );
+
+          return (
+            <li
+              key={`experience-point-${index}`}
+              className='text-white-100 text-[14px] pl-1 tracking-wider leading-relaxed'
+              dangerouslySetInnerHTML={{ __html: highlightedPoint }}
+            />
+          );
+        })}
       </ul>
     </VerticalTimelineElement>
   );

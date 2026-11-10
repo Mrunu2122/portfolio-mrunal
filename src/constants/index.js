@@ -38,6 +38,8 @@ import {
   shopify,
   cloudinary,
   googlecloud,
+  metricpilot,
+  fitverse,
 } from '../assets'
 
 import doutya from "../assets/company/doutya.png";
@@ -183,69 +185,46 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Full Stack Developer",
-    company_name: "Bin Tech",
+    title: "Full Stack Developer (Full-Time)",
+    company_name: "The Bin Tech",
     icon: bintech,
     iconBg: "#383E56",
-    date: "Dec 2025 – May 2026 (Internship) | Jun 2026 – Sep 2026 (Full-Time)",
+    date: "Dec 2025 - Sep 2026",
     points: [
-      "Developed end-to-end platforms (Little Lads Orphanage, Farm Store) handling full stack, deployment, and Google Ads integration.",
-      "Leveraged Google Cloud, Hostinger, and Cloudinary for production infrastructure and optimized media management.",
-      "Built a 3D interactive website using React, Three.js, and React Three Fiber, independently mastering 3D web dev in 20 days.",
-      "Managed multiple concurrent projects with complete ownership from architecture through deployment and maintenance.",
+      "Built and deployed the Farm Store website end to end, owning front-end, back-end, media, hosting, and deployment.",
+      "Resolved excessive API requests on the Little Lads website that kept hitting hosting limits by fixing the data-fetching root cause.",
+      "Developed and launched an interactive 3D website in 20 days with React, Three.js, and React Three Fiber, optimizing loading and proximity-based rendering.",
+      "Corrected a Shopify checkout error (Rs. 399 product charged as Rs. 10) by tracing it to an unexpected donation option and fixing the purchase flow.",
     ],
     technologies: [
       { name: "React", icon: reactjs },
-      { name: "Node.js", icon: nodejs },
       { name: "Three.js", icon: threejs },
+      { name: "Node.js", icon: nodejs },
       { name: "Express", icon: express },
       { name: "MongoDB", icon: mongodb },
-      { name: "Google Cloud", icon: aws },
+      { name: "Google Cloud", icon: googlecloud },
+      { name: "Shopify", icon: shopify },
       { name: "Git", icon: git },
     ],
   },
   {
-    title: "Technical Lead & Full Stack Developer Intern",
+    title: "Full Stack Developer Intern",
     company_name: "Inmin",
     icon: inmin,
     iconBg: "#E6DEDD",
-    date: "1 July 2025 – 1 November 2025 (Internship)",
+    date: "Jul 2025 - Nov 2025",
     points: [
-      "Led a team of developers in designing and implementing scalable web applications.",
-      "Architected and developed full-stack solutions using modern technologies.",
-      "Mentored junior developers and conducted code reviews to maintain code quality.",
-      "Collaborated with cross-functional teams to deliver high-quality software solutions.",
-      "Optimized application performance and implemented best practices in development.",
-    ],
-    technologies: [
-      { name: "React", icon: reactjs },
-      { name: "Node.js", icon: nodejs },
-      { name: "MongoDB", icon: mongodb },
-      { name: "Express", icon: express },
-      { name: "JavaScript", icon: javascript },
-      { name: "TypeScript", icon: typescript },
-      { name: "AWS", icon: aws },
-      { name: "Git", icon: git },
-    ],
-  },
-  {
-    title: "Frontend Developer (Freelance)",
-    company_name: "Neelambari",
-    icon: creator,  // Using the creator icon for freelance work
-    iconBg: "#E6DEDD",
-    date: "October 2025 (Freelancing)",
-    points: [
-      "Designed and developed the complete frontend of the Neelambari website from scratch.",
-      "Implemented responsive and modern UI/UX design principles for optimal user experience.",
-      "Utilized Next.js and TypeScript to build a performant and type-safe application.",
-      "Successfully delivered the project within a tight 1-week deadline.",
+      "Launched inmin.info in approximately 48 hours using Next.js, TypeScript, and MongoDB.",
+      "Resolved a launch-day slowdown (about 70 orders in 11 minutes across Bengaluru colleges) by giving every order a unique ID and status (pending, assigned, shipped, delivered) and routing new orders into a pending queue; the statuses also kept admins and delivery partners updated.",
+      "Implemented Python back-end functionality and React Native mobile apps, covering feature development, API integration, testing, and deployment.",
+      "Coordinated feature delivery across an e-commerce ecosystem of 3 production apps (customer, delivery partner, admin).",
     ],
     technologies: [
       { name: "Next.js", icon: reactjs },
       { name: "TypeScript", icon: typescript },
-      { name: "React", icon: reactjs },
-      { name: "HTML", icon: html },
-      { name: "CSS", icon: css },
+      { name: "React Native", icon: mobile },
+      { name: "MongoDB", icon: mongodb },
+      { name: "Node.js", icon: nodejs },
       { name: "Git", icon: git },
     ],
   },
@@ -254,21 +233,34 @@ const experiences = [
     company_name: "Doutya Technologies",
     icon: doutya,
     iconBg: "#383E56",
-    date: "30 July 2024 – 30 April 2025 (Internship)",
+    date: "Aug 2024 - Apr 2025",
     points: [
-      "Worked on full-stack web applications using MERN stack.",
-      "Collaborated with cross-functional teams to deliver AI-powered features.",
-      "Built responsive UIs and RESTful APIs for core products.",
-      "Gained experience in production-level deployments and performance optimization.",
+      "Developed React front-end features for client projects including Xortlist and Axara, after learning React in approximately 14 days.",
+      "Managed sprints, coordinated feature delivery, and integrated stakeholder feedback.",
+      "Built responsive, accessible user interfaces and collaborated closely with cross-functional teams.",
     ],
     technologies: [
       { name: "React", icon: reactjs },
-      { name: "Node.js", icon: nodejs },
-      { name: "MongoDB", icon: mongodb },
-      { name: "Express", icon: express },
       { name: "JavaScript", icon: javascript },
       { name: "HTML", icon: html },
       { name: "CSS", icon: css },
+      { name: "Git", icon: git },
+    ],
+  },
+  {
+    title: "Co-Founder, Freelance Web Development Agency",
+    company_name: "Karmun",
+    icon: creator,
+    iconBg: "#E6DEDD",
+    date: "During college",
+    points: [
+      "Co-founded a web agency and delivered freelance client projects, owning requirements, client communication, and delivery.",
+      "Designed and developed full-stack web applications tailored to client business specifications.",
+    ],
+    technologies: [
+      { name: "React", icon: reactjs },
+      { name: "JavaScript", icon: javascript },
+      { name: "Tailwind CSS", icon: tailwind },
       { name: "Git", icon: git },
     ],
   },
@@ -277,9 +269,68 @@ const experiences = [
 
 const projects = [
   {
-    name: "3D Interactive Bin Tech Website",
+    name: "Verviq (AI-Interviewer)",
     description:
-      "An interactive 3D website built using Three.js and React Three Fiber, showcasing immersive 3D visualization and modern web technologies.",
+      "A production-grade AI interview intelligence platform featuring voice/video simulation, intelligent real-time contextual follow-up probing, speech telemetry & filler word analytics, and senior-calibrated rubrics.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "geminiai",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "webaudio",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: advisor,
+    source_code_link: "https://github.com/Mrunu2122/Verviq.git",
+  },
+  {
+    name: "MetricPilot",
+    description:
+      "A high-assurance, multi-agent business intelligence system with deterministic math isolation, source citation tracking, zero-tolerance verification auditing, and automated evaluation benchmark suites.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "multi-agent",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "genai",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "zod",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: metricpilot,
+    source_code_link: "https://github.com/Mrunu2122/metricpilot.git",
+    live_demo_link: "https://metricpilot-ashy.vercel.app/",
+  },
+  {
+    name: "3D Website for The Bin Tech",
+    description:
+      "An interactive 3D web experience built and launched in 20 days with optimized scene loading and proximity-based rendering using React Three Fiber and Three.js.",
     tags: [
       {
         name: "three.js",
@@ -293,55 +344,44 @@ const projects = [
         name: "react3fiber",
         color: "yellow-text-gradient",
       },
+      {
+        name: "webgl",
+        color: "pink-text-gradient",
+      },
     ],
     image: threeWebsite,
     source_code_link: "https://github.com/thebintech/3D-bintech",
+    live_demo_link: "https://bintech-3d-47115275838.asia-south1.run.app",
   },
   {
-    name: "AI-Advisor",
+    name: "FITVERSE",
     description:
-      "An AI-powered mock interview platform that converts your speech into text and highlights areas where you fumbled, offering suggestions for improvement. It gives you unlimited attempts to practice",
+      "A futuristic fashion-tech and interactive 3D digital campaign platform featuring scroll-choreographed 3D avatars, apparel inspection, and spatial portal experiences.",
     tags: [
       {
-        name: "react",
+        name: "three.js",
         color: "blue-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "react-three-fiber",
         color: "green-text-gradient",
       },
       {
-        name: "openai",
+        name: "nextjs",
         color: "pink-text-gradient",
       },
       {
-        name: "speech-to-text",
+        name: "gsap",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "tailwind",
         color: "orange-text-gradient",
       },
     ],
-    image: advisor,
-    source_code_link: "https://github.com/Mrunu2122/ai-interviewer.git",
-  },
-  {
-    name: "Infotect-Interior Web Page",
-    description:
-      "A clean and visually rich website built to showcase my frontend skills, focused on UI layout, responsiveness, and design.",
-    tags: [
-      {
-        name: "javascript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "react",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "yellow-text-gradient",
-      },
-    ],
-    image: Infotech,
-    source_code_link: "https://github.com/Mrunu2122/infotech-interiors.git",
+    image: fitverse,
+    source_code_link: "https://github.com/Mrunu2122/FITVERSE.git",
+    live_demo_link: "https://fitverse-zeta-eight.vercel.app/",
   },
 ];
 

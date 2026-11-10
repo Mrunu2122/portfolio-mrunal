@@ -33,6 +33,8 @@ import firebase from "./tech/firebase.png";
 import shopify from "./tech/shopify.png";
 import cloudinary from "./tech/cloudinary.png";
 import googlecloud from "./tech/googlecloud.png";
+import metricpilot from "./metricpilot.png";
+import fitverse from "./fitverse.jpg";
 import firstTestimonial from './Tars Ken.webp';
 import secondTestimonial from './image.webp';
 import thirdTestimonial from './third testimonial.webp'
@@ -76,4 +78,6 @@ export {
   shopify,
   cloudinary,
   googlecloud,
+  metricpilot,
+  fitverse,
 };
